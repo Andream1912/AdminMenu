@@ -1,0 +1,208 @@
+@media screen and (min-width: 1000px) {
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    margin: 0;
+    background-color: #203865;
+  }
+  .background {
+    background-color: rgb(228, 228, 208);
+    background-image: linear-gradient(
+      to right,
+      beige,
+      rgb(243, 243, 230),
+      rgb(241, 241, 179)
+    );
+    min-width: 100%;
+    max-width: fit-content;
+    min-height: 100%;
+    max-height: fit-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 20%;
+  }
+  .menu {
+    width: 40%;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .right {
+    display: none;
+  }
+  .category {
+    border: 1px solid black;
+    background-color: beige;
+    border-radius: 10%;
+    padding: 5%;
+    width: 200px;
+    margin-bottom: 3%;
+    width: 250px;
+    text-align: left;
+    font-size: 37px;
+  }
+  .category:hover {
+    background-color: white;
+  }
+  .caffetteria {
+    display: none;
+  }
+  .credits {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: center;
+  }
+  .credits img {
+    width: 100px;
+  }
+  .back {
+    position: absolute;
+    width: 50px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    font-family: "Gloria Hallelujah", cursive;
+    margin: 0;
+    background-color: #203865;
+  }
+  .background {
+    background-image: url(../immagini/background.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #203865;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    gap: 4%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 600px;
+  }
+  .right img{
+    size:auto;
+  }
+  .logo {
+    width: 40%;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  .menu {
+    width: 100%;
+  }
+  .category {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    margin-left: 2%;
+  }
+  .caffetteria {
+    width: 30%;
+    border-radius: 10%;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  }
+  a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+  }
+  .credits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    margin-left: -20%;
+  }
+  .instagram {
+    width: 65px;
+    height: 70px;
+  }
+  .maps {
+    width: 60px;
+    height: 32px;
+    margin-top: -5%;
+  }
+  .facebook {
+    width: 48px;
+    height: 48px;
+    margin-left: 14%;
+    margin-top: -5%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    overflow: hidden;
+  }
+  .right img {
+    height: 100%;
+    margin: 3%;
+    margin-bottom: -20%;
+  }
+  .back {
+    position: absolute;
+    width: 30px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  a {
+    font-size: 10px;
+  }
+  .credits {
+    margin-left: -5%;
+  }
+  .instagram {
+    width: 100%;
+    height: 56px;
+  }
+  .maps {
+    width: 100%;
+    height: 26px;
+  }
+  .facebook {
+    width: 100%;
+    height: 40px;
+  }
+}

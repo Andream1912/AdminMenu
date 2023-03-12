@@ -1,0 +1,43 @@
+        table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		th {
+			background-color: #ddd;
+		}
+
+		th,
+		td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		td:last-child{
+		    text-align: center;
+		}
+		td input{
+		    font: 0.9em/1.5em "handwriting", sans-serif;
+		      border: none;
+		      padding: 0 10px;
+		      margin: 0;
+		      width: auto;
+		      background: none;
+		      
+		}
+		.toggle-header {
+			cursor: pointer;
+			text-align:center;
+		}
+
+		.toggle-body {
+			display: none;
+		}
+
+		.btn-group {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.btn-group button {
+			margin: 5px;
+		}
